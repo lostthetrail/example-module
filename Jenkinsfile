@@ -20,5 +20,15 @@ pipeline {
                 sh 'npm ci'
             }
         }
+        stage('test') {
+            steps {
+                sh 'npm test'
+            }
+        }
+        stage('prune') {
+            steps {
+                sh 'npm prune --production'
+            }
+        }
     }
 }

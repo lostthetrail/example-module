@@ -13,13 +13,11 @@ pipeline {
                 sh 'printenv'
                 sh 'node -v'
                 sh 'npm -v'
-                sh 'ls -la'
             }
         }
         stage('install') {
             steps {
-                sh 'NODE_ENV=development npm ci'
-                sh 'ls -la node_modules/'
+                sh 'npm ci'
             }
         }
         stage('test') {

@@ -13,11 +13,13 @@ pipeline {
                 sh 'printenv'
                 sh 'node -v'
                 sh 'npm -v'
+                sh 'ls -la'
             }
         }
         stage('install') {
             steps {
                 sh 'npm ci'
+                sh 'ls -la'
             }
         }
         stage('test') {

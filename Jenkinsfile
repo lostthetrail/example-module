@@ -18,8 +18,8 @@ pipeline {
         }
         stage('install') {
             steps {
-                sh 'npm ci'
-                sh 'ls -la'
+                sh 'NODE_ENV=development npm ci'
+                sh 'ls -la node_modules/'
             }
         }
         stage('test') {

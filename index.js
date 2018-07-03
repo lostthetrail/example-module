@@ -1,5 +1,5 @@
 'use strict';
 
-const chalk = require('chalk');
+const greeter = require('./greeter');
 
-console.log(`${chalk.red('Example')} ${chalk.green('module!')}`);
+greeter.beSocial();

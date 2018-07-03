@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lostthetrail/example-module/issues"
   },
-  "homepage": "https://github.com/lostthetrail/example-module#readme"
+  "homepage": "https://github.com/lostthetrail/example-module#readme",
+  "dependencies": {
+    "chalk": "^2.4.1"
+  }
 }

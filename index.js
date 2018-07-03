@@ -1,3 +1,5 @@
 'use strict';
 
-console.log('hello from js');
+const chalk = require('chalk');
+
+console.log(`${chalk.red('Example')} ${chalk.green('module!')}`);
